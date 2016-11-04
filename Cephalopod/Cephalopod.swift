@@ -44,7 +44,7 @@ open class Cephalopod: NSObject {
   static let defaultFadeDurationSeconds = 3.0
   static let defaultVelocity = 2.0
 
-  let player: AVAudioPlayer
+  let player: AVPlayer
   var timer: AutoCancellingTimer?
   
   
@@ -67,7 +67,7 @@ open class Cephalopod: NSObject {
   - parameter player: an instance of AVAudioPlayer.
    
   */
-  public init(player: AVAudioPlayer) {
+  public init(player: AVPlayer) {
     self.player = player
   }
   
